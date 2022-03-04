@@ -1,7 +1,7 @@
-(ns ae.almost-education.events
+(ns ae.com.aelfsyg.events
   (:require
    [re-frame.core :as re-frame]
-   [ae.almost-education.db :as db]
+   [ae.com.aelfsyg.db :as db]
    [day8.re-frame.tracing :refer-macros [fn-traced]]))
 
 (re-frame/reg-event-db

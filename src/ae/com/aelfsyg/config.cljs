@@ -1,4 +1,4 @@
-(ns ae.almost-education.config)
+(ns ae.com.aelfsyg.config)
 
 (def debug?
   ^boolean goog.DEBUG)

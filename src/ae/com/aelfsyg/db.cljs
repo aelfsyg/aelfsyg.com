@@ -1,4 +1,4 @@
-(ns ae.almost-education.db)
+(ns ae.com.aelfsyg.db)
 
 (def default-db
   {:name "re-frame"

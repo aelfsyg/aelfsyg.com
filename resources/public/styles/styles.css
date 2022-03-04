@@ -1,20 +1,26 @@
 body {
     background-color: #1e1e28;
-    color: #debede;
+    color: #ddccdd;
     text-align: center;
 }
 
 body.dark {
     background-color: #1e1e28 !important;
-    color: #debede !important;
+    color: #ddccdd !important;
 }
 
 body.light {
     color: #1e1e28 !important;
-    background-color: #debede !important;
+    background-color: #ddccdd !important;
 }
 
 a, a:visited, a:hover, a:active {
+    color: inherit;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.light {
     color: inherit;
     font-weight: 300;
     text-decoration: none;
@@ -67,7 +73,7 @@ a, a:visited, a:hover, a:active {
 
 .react-toggle--checked .react-toggle-thumb {
   left: 27px;
-  border-color: #debede;
+  border-color: #ddccdd;
 }
 
 .react-toggle-track {
@@ -75,8 +81,8 @@ a, a:visited, a:hover, a:active {
 }
 
 .react-toggle-thumb {
-  border: 1px solid #debede;
-  background-color: #debede;
+  border: 1px solid #ddccdd;
+  background-color: #ddccdd;
 }
 
 #header-padding {
@@ -84,5 +90,5 @@ a, a:visited, a:hover, a:active {
 }
 
 path {
-    fill: #debede;
+    fill: #ddccdd;
 }

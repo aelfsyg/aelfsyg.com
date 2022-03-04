@@ -1,6 +1,6 @@
-(ns ae.almost-education.core-test
+(ns ae.com.aelfsyg.core-test
   (:require [cljs.test :refer-macros [deftest testing is]]
-            [ae.almost-education.core :as core]))
+            [ae.com.aelfsyg.core :as core]))
 
 #_(deftest fake-test
     (testing "fake description"

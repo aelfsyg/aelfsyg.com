@@ -1,4 +1,4 @@
-(ns ae.almost-education.styles
+(ns ae.com.aelfsyg.styles
   (:require-macros
    [garden.def :refer [defcssfn]])
   (:require

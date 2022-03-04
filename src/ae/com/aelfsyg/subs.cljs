@@ -1,4 +1,4 @@
-(ns ae.almost-education.subs
+(ns ae.com.aelfsyg.subs
   (:require
    [re-frame.core :as re-frame]))
 

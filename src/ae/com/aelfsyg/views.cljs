@@ -1,12 +1,12 @@
-(ns ae.almost-education.views
+(ns ae.com.aelfsyg.views
   (:require
    [re-frame.core :as re-frame]
    [re-com.core :as re-com :refer [at]]
    [reagent.core :as reagent]
-   [ae.almost-education.styles :as styles]
-   [ae.almost-education.events :as events]
-   [ae.almost-education.routes :as routes]
-   [ae.almost-education.subs :as subs]
+   [ae.com.aelfsyg.styles :as styles]
+   [ae.com.aelfsyg.events :as events]
+   [ae.com.aelfsyg.routes :as routes]
+   [ae.com.aelfsyg.subs :as subs]
    [clojure.string]
    ["react-toggle" :as toggle]))
 
@@ -44,14 +44,14 @@
     [:div.centre [:img#other-logo {:src image}]]))
 
 (defn title []
-  [:h1 "AlmostEducated"])
+  [:h1 "Ælfsyg"])
 
 ;; Home
 
 (defn links []
   [:div
-   [:h2 [:a {:href "https://blog.almost.education"} "Blog"]]
-   [:h2 [:a {:href "https://github.com/educatedalmost"} "Software"]]
+   [:h2 [:a {:href "https://blog.aelfsyg.com"} "Blog"]]
+   [:h2 [:a {:href "https://github.com/aelfsyg"} "Software"]]
    [:h2 [:a {:href "tutoring" :on-click #(re-frame/dispatch [::events/navigate :tutoring])} "Tutoring"]]
    [:h2 [:a {:href "about" :on-click #(re-frame/dispatch [::events/navigate :about])} "About"]]])
 
@@ -73,16 +73,18 @@
 
 (defn about-content []
   [:div.content
-   [:p "Hi, I'm Alex, a software developer and tutor from the United Kingdom."]
-   [:p "E-mail me at " [:a {:href "mailto:EducatedAlmost@gmail.com"} "EducatedAlmost@gmail.com"]]
-   [:p "You can have a look at the software I write on " [:a {:href "https://github.com/EducatedAlmost"} "GitHub"] "."]
-   [:p "You can read the things I write on my " [:a {:href "https://blog.almost.education"} "blog"] "."]
+   [:p "Hi, I'm Ælfsyg (" [:i "ELF-sig"] "), a software developer and tutor from the United Kingdom."]
+   [:p "E-mail me at " [:a {:href "mailto:aelfsyg@gmail.com"} "aelfsyg@gmail.com"]]
+   [:p "You can have a look at the software I write on " [:a {:href "https://github.com/aelfsyg"} "GitHub"] "."]
+   [:p "You can read the things I write on my " [:a {:href "https://blog.aelfsyg.com"} "blog"] "."]
     [:p "Watch my videos on " [:a {:href "https://www.youtube.com/channel/UCpTg2sXTOSTPmctaTMFCrGA"} "YouTube"] "."]
    [:p "Join my " [:a {:href "https://discord.gg/EJS23hE6vX"} "Discord"] "."]
-   [:p "Browse my " [:a {:href "https://twitter.com/EducatedAlmost"} "Twitter"] "."]
-   [:p "Find me on " [:a {:href "https://reddit.com/u/EducatedAlmost"} "Reddit"]
+   [:p "Browse my " [:a {:href "https://twitter.com/aelfsyg"} "Twitter"] "."]
+   [:p "Find me on " [:a {:href "https://reddit.com/u/aelfsyg"} "Reddit"]
     ", look at my "
     [:a {:href "https://reddit.com/r/AlmostEducated"} "Subreddit"] "."]
+   [:p "Find my PGP keys at " [:a {:href "https://keybase.io/aelfsyg"} "Keybase"] "."]
+   [:p "My PGP fingerprint is " [:span {:class "light"} "3DB0 597F 92B8 9E5C 9995"] "."]
    ])
 
 (defn about-panel []

@@ -1,11 +1,11 @@
-(ns ae.almost-education.core
+(ns ae.com.aelfsyg.core
   (:require
    [reagent.dom :as rdom]
    [re-frame.core :as re-frame]
-   [ae.almost-education.events :as events]
-   [ae.almost-education.routes :as routes]
-   [ae.almost-education.views :as views]
-   [ae.almost-education.config :as config]))
+   [ae.com.aelfsyg.events :as events]
+   [ae.com.aelfsyg.routes :as routes]
+   [ae.com.aelfsyg.views :as views]
+   [ae.com.aelfsyg.config :as config]))
 
 (defn dev-setup []
   (when config/debug?

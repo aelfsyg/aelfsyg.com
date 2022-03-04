@@ -1,9 +1,9 @@
-(ns ae.almost-education.routes
+(ns ae.com.aelfsyg.routes
   (:require
    [bidi.bidi :as bidi]
    [pushy.core :as pushy]
    [re-frame.core :as re-frame]
-   [ae.almost-education.events :as events]))
+   [ae.com.aelfsyg.events :as events]))
 
 (defmulti panels identity)
 (defmethod panels :default [] [:div "No panel found for this route."])
